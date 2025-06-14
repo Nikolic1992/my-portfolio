@@ -1,1 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 @import "tailwindcss";
+
+@layer base {
+  h1 {
+    @apply text-[72px] tracking-normal leading-[1] font-bold font-inter;
+  }
+  h2 {
+    @apply text-[36px] tracking-normal  font-inter;
+  }
+  h3 {
+    @apply text-[24px] tracking-normal  font-medium font-inter;
+  }
+  h4 {
+    @apply text-[16px] tracking-normal   font-inter;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-bar-btn {
+    @apply cursor-pointer hover:text-mainWhite uppercase;
+  }
+}
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --color-mainBackground: #000319;
+  --color-lightPurple: #cbacf9;
+  --color-mainGray: #c1c2d3;
+  --color-mainWhite: #ffffff;
+  --color-borderGray: #6971a2;
+  --color-secondaryGray: #e4ecff;
+}
+
+/* Mouse loader */
+.loader {
+  width: 1.875rem;
+  height: 3.125rem;
+  box-sizing: border-box;
+  border: 0.125rem solid #fff;
+  position: relative;
+  border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  width: 0.3125rem;
+  height: 0.3125rem;
+  background: #7843e9;
+  border-radius: 50%;
+  animation: fadeDown 1.2s ease-out infinite;
+}
+
+@keyframes fadeDown {
+  0% {
+    top: 0%;
+    opacity: 1;
+  }
+  100% {
+    top: 60%;
+    opacity: 0;
+  }
+}
