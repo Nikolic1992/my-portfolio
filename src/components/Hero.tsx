@@ -1,22 +1,21 @@
+import { useLocation } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import { useEffect } from "react";
 
-function HomePage() {
+function Hero() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
-    <div className="relative flex h-screen items-center justify-center bg-[url('/grid-pattern.png')] bg-cover bg-center bg-no-repeat px-4">
-      {/* Spotlights */}
-      <img
-        src="/spotlight-left.png"
-        alt="spotlight-left"
-        className="absolute top-0 left-0 w-[150px] md:w-[250px]"
-      />
-      <img
-        src="/spotlight-right.png"
-        alt="spotlight-right"
-        className="absolute top-0 right-0 w-[150px] md:w-[250px]"
-      />
-
+    <div className="relative flex h-screen items-center justify-center px-4">
       <NavBar />
-
       <div className="flex w-full max-w-[1000px] flex-col items-center justify-center gap-8 md:gap-10">
         <h3 className="text-secondaryGray text-center tracking-widest">
           Creating Dynamic Web Magic
@@ -46,4 +45,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Hero;
