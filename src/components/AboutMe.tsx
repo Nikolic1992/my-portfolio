@@ -2,7 +2,7 @@ import Slider from "./Slider";
 
 function AboutMe() {
   return (
-    <section className="flex min-h-screen items-center justify-center bg-[url('/grid-pattern.png')] bg-cover bg-center bg-no-repeat p-4">
+    <div className="mt-15 flex min-h-screen items-center justify-center p-4">
       <div className="mx-auto flex max-w-7xl flex-col gap-8">
         <div className="flex flex-col gap-8 md:flex-row">
           <div className="relative min-h-[350px] flex-1 overflow-hidden rounded-3xl bg-[url('/mobile-laptop.png')] bg-cover bg-center bg-no-repeat md:min-h-[500px] md:bg-[url('/desktop-laptop.png')]">
@@ -79,7 +79,7 @@ function AboutMe() {
               </h3>
               <button className="absolute bottom-3 z-30 flex cursor-pointer items-center gap-4 rounded-lg border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] px-6 py-2 shadow-lg transition-colors duration-300 hover:bg-white/15">
                 <h3 className="text-mainGray hover:text-mainWhite transition-colors duration-300">
-                  Checkout My Work
+                  Contact Me
                 </h3>
                 <img src="./arrow.png" alt="arrow" />
               </button>
@@ -113,7 +113,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
