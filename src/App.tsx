@@ -1,13 +1,21 @@
-import AboutMe from "./components/AboutMe";
-import HomePage from "./pages/HomePage";
+import { useRoutes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import ProjectsPage from "./pages/ProjectPage";
+
+const routesConfig = [
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/:id",
+    element: <ProjectsPage />,
+  },
+];
 
 function App() {
-  return (
-    <div className="">
-      <HomePage />
-      <AboutMe />
-    </div>
-  );
+  const routing = useRoutes(routesConfig);
+  return routing;
 }
 
 export default App;
