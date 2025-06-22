@@ -38,7 +38,7 @@ function ProjectsPage() {
   }
 
   return (
-    <div className="relative flex h-screen items-center justify-start bg-[url('/grid-pattern.png')] bg-cover bg-center bg-no-repeat px-4">
+    <div className="relative flex h-screen items-center justify-center bg-[url('/grid-pattern.png')] bg-cover bg-center bg-no-repeat px-4">
       <div className="relative flex w-full max-w-[1200px] flex-col items-center gap-10 rounded-lg border border-white/20 bg-white/10 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] p-10 pt-16 text-center md:min-h-[600px]">
         <button
           onClick={handleBack}
