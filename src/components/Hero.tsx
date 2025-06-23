@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import { useEffect } from "react";
 
@@ -30,12 +30,14 @@ function Hero() {
           Hi, I am Stevan, Fullstack Developer from Sydney
         </h3>
 
-        <button className="flex cursor-pointer items-center justify-center gap-4 rounded-lg border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] px-8 py-6 shadow-lg transition-colors duration-300 hover:bg-white/15 md:w-auto">
-          <h3 className="text-mainGray hover:text-mainWhite transition-colors duration-300">
-            Checkout My Work
-          </h3>
-          <img src="./arrow.png" alt="arrow" />
-        </button>
+        <Link to="#projects">
+          <button className="flex cursor-pointer items-center justify-center gap-4 rounded-lg border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] px-8 py-6 shadow-lg transition-colors duration-300 hover:bg-white/15 md:w-auto">
+            <h3 className="text-mainGray hover:text-mainWhite transition-colors duration-300">
+              Checkout My Work
+            </h3>
+            <img src="./arrow.png" alt="arrow" />
+          </button>
+        </Link>
       </div>
 
       <div className="absolute bottom-10 z-10 flex w-full justify-center">
