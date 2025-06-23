@@ -1,4 +1,4 @@
-function WorkExperience() {
+function Experience() {
   return (
     <div className="mt-40 flex flex-col items-center justify-center px-4 md:px-0">
       <h1 className="text-mainWhite mb-10 text-center">
@@ -88,4 +88,4 @@ function WorkExperience() {
   );
 }
 
-export default WorkExperience;
+export default Experience;
