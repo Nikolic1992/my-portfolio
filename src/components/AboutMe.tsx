@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Slider from "./Slider";
 
 function AboutMe() {
@@ -77,12 +78,16 @@ function AboutMe() {
               <h3 className="text-mainWhite absolute z-20 text-center font-semibold">
                 Do you want to start a project together?
               </h3>
-              <button className="absolute bottom-3 z-30 flex cursor-pointer items-center gap-4 rounded-lg border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] px-6 py-2 shadow-lg transition-colors duration-300 hover:bg-white/15">
-                <h3 className="text-mainGray hover:text-mainWhite transition-colors duration-300">
-                  Contact Me
-                </h3>
-                <img src="./arrow.png" alt="arrow" />
-              </button>
+              <div className="absolute bottom-3 z-30">
+                <Link to="#contact">
+                  <button className="flex cursor-pointer items-center gap-4 rounded-lg border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] px-6 py-2 shadow-lg transition-colors duration-300 hover:bg-white/15">
+                    <h3 className="text-mainGray hover:text-mainWhite transition-colors duration-300">
+                      Contact Me
+                    </h3>
+                    <img src="./arrow.png" alt="arrow" />
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
