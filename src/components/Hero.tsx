@@ -21,7 +21,7 @@ function Hero() {
           Creating Dynamic Web Magic
         </h3>
 
-        <h1 className="text-mainWhite text-center">
+        <h1 className="text-mainWhite text-center text-4xl lg:text-7xl">
           Transforming Concepts into Seamless{" "}
           <span className="text-lightPurple">User Experiences</span>
         </h1>

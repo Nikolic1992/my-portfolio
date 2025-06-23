@@ -19,12 +19,12 @@ function Projects({ scrollTo }: ProjectsProps) {
     <div
       ref={sectionRef}
       id="projects"
-      className="relative mt-15 flex min-h-screen flex-col items-center justify-center gap-10 px-4 py-8"
+      className="relative mt-15 flex min-h-screen flex-col items-center justify-center px-4 md:px-0"
     >
       <h1 className="text-mainWhite text-center">
         Selection of <span className="text-lightPurple">recent projects</span>
       </h1>
-      <div className="grid grid-cols-1 items-center justify-center gap-8 md:grid-cols-2">
+      <div className="mt-15 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2">
         {projectsData.map((project) => (
           <div
             key={project.id}
