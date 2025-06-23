@@ -15,7 +15,10 @@ function NavBar() {
         <button className="nav-bar-btn" onClick={() => scrollTo("projects")}>
           <h4>Projects</h4>
         </button>
-        <button className="nav-bar-btn">
+        <button
+          className="nav-bar-btn"
+          onClick={() => scrollTo("testimonials")}
+        >
           <h4>Testimonials</h4>
         </button>
         <button className="nav-bar-btn">
