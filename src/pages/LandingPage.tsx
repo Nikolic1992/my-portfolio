@@ -6,6 +6,8 @@ import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
+import Experience from "../components/Experience";
 
 function Section({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
@@ -64,6 +66,14 @@ function LandingPage() {
         <section id="testimonials">
           <Section>
             <Testimonials />
+          </Section>
+        </section>
+        <Section>
+          <Experience />
+        </Section>
+        <section id="contact">
+          <Section>
+            <Contact />
           </Section>
         </section>
       </main>
