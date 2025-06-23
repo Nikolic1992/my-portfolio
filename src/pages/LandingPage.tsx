@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
+import Testimonials from "../components/Testimonials";
 
 function Section({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
@@ -47,11 +48,9 @@ function LandingPage() {
         className="absolute top-0 right-0 w-[150px] md:w-[250px] lg:w-[500px]"
       />
       <main>
-        <section id="home">
-          <Section>
-            <Hero />
-          </Section>
-        </section>
+        <Section>
+          <Hero />
+        </Section>
         <section id="about">
           <Section>
             <AboutMe />
@@ -60,6 +59,11 @@ function LandingPage() {
         <section id="projects">
           <Section>
             <Projects />
+          </Section>
+        </section>
+        <section id="testimonials">
+          <Section>
+            <Testimonials />
           </Section>
         </section>
       </main>
