@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# 💻 Stevan Nikolic – Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎉 Welcome to my personal portfolio website!  
+I'm **Stevan Nikolic**, a 33-year-old Full Stack Web Developer based in **Sydney, Australia** 🇦🇺.
 
-Currently, two official plugins are available:
+This website is not just a collection of my projects –  
+it's a reflection of **who I am**, what I build, and how I think as a developer. ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack & Tools
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📄 Frontend
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- HTML5
+- CSS3 (vanilla + preprocessors)
+- JavaScript (ES6+)
+- TypeScript
+- React
+- Redux / Zustand / MobX
+- Tailwind CSS
+- Bootstrap
+- Material UI
+- Vite
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🌐 Backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js
+- Express.js
+- Firestore (Firebase)
+- Appwrite
+- Axios
+- REST APIs
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### ⚙️ Dev Tools
+
+- Git & GitHub
+- VS Code
+- Chrome DevTools
+- Postman
+- NPM / Yarn
+- Git Bash
+- Figma (basic UI prototyping)
+
+---
+
+## 🚀 About This Website
+
+This portfolio was built to:
+
+- 💼 Showcase my **projects**
+- 🎯 Demonstrate my **skills** and **tech stack**
+- 🙋 Reflect my **personality** and style as a developer
+- 📬 Provide a way for you to **contact or connect** with me
+
+Built with love using:
+**React**, **Tailwind**, **Framer Motion**, and a bit of ✨ frontend magic.
+
+---
+
+## 📂 Projects
+
+Each project on this site includes:
+
+- 📸 Image gallery (showcase)
+- 📖 Description & role
+- 🔗 GitHub repository
+- 🌍 Live demo (when available)
+
+Click on **CASE STUDY** to explore the full details!
+
+---
+
+## 📫 Let's Connect!
+
+I'm always open to collaboration, feedback, or just a good tech chat.  
+Feel free to reach out through the contact form on the website or via GitHub.
+
+---
+
+Thanks for visiting! 🙌  
+Made with ❤️ by **Stevan Nikolic**
