@@ -21,7 +21,7 @@ function NavBar() {
         >
           <h4>Testimonials</h4>
         </button>
-        <button className="nav-bar-btn">
+        <button className="nav-bar-btn" onClick={() => scrollTo("contact")}>
           <h4>Contact</h4>
         </button>
       </div>
