@@ -99,10 +99,9 @@ function AboutMe() {
             />
             <h2 className="text-mainWhite font-bold">About me</h2>
             <h3 className="text-mainWhite text-center font-serif">
-              My name is{" "}
-              <span className="text-lightPurple font-bold">Stevan</span>, a
-              dedicated{" "}
-              <span className="text-lightPurple font-bold">
+              My name is <span className="gradient-text font-bold">Stevan</span>
+              , a dedicated{" "}
+              <span className="gradient-text font-bold">
                 FullStack Developer
               </span>{" "}
               based in Sydney, Australia. My approach to programming is driven
