@@ -1,9 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Hero() {
   const location = useLocation();
+  const [displayText, setDisplayText] = useState("Creating Dynamic Web Magic");
+  const [showCursor, setShowCursor] = useState(false);
+
+  const fullText = "Creating Dynamic Web Magic";
 
   useEffect(() => {
     if (location.hash) {
@@ -13,21 +17,88 @@ function Hero() {
       }
     }
   }, [location]);
+
+  useEffect(() => {
+    setShowCursor(true);
+
+    const typeWriterCycle = () => {
+      setDisplayText("");
+
+      // Faza pisanja
+      let currentIndex = 0;
+      const typingInterval = setInterval(() => {
+        if (currentIndex < fullText.length) {
+          setDisplayText(fullText.slice(0, currentIndex + 1));
+          currentIndex++;
+        } else {
+          clearInterval(typingInterval);
+
+          // Pauza nakon pisanja (2 sekunde)
+          setTimeout(() => {
+            // Faza brisanja
+            let deleteIndex = fullText.length;
+            const deletingInterval = setInterval(() => {
+              if (deleteIndex > 0) {
+                deleteIndex--;
+                setDisplayText(fullText.slice(0, deleteIndex));
+              } else {
+                clearInterval(deletingInterval);
+              }
+            }, 50); // Brzina brisanja
+          }, 2000); // Pauza pre brisanja
+        }
+      }, 100); // Brzina pisanja
+    };
+
+    // Pokreni prvi ciklus nakon 3 sekunde
+    const startAnimation = setTimeout(() => {
+      typeWriterCycle();
+
+      // Ponavljaj ciklus svakih 8 sekundi
+      const repeatInterval = setInterval(typeWriterCycle, 8000);
+
+      return () => clearInterval(repeatInterval);
+    }, 3000);
+
+    return () => {
+      clearTimeout(startAnimation);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!showCursor) return;
+
+    const cursorInterval = setInterval(() => {
+      const cursor = document.querySelector(".typing-cursor");
+      if (cursor && cursor instanceof HTMLElement) {
+        cursor.style.opacity = cursor.style.opacity === "0" ? "1" : "0";
+      }
+    }, 500);
+
+    return () => clearInterval(cursorInterval);
+  }, [showCursor]);
+
   return (
     <div className="relative flex h-screen items-center justify-center px-4">
       <NavBar />
       <div className="flex w-full max-w-[1000px] flex-col items-center justify-center gap-8 md:gap-10">
-        <h3 className="text-secondaryGray text-center tracking-widest">
-          Creating Dynamic Web Magic
+        <h3 className="text-secondaryGray min-h-[1.5rem] text-center tracking-widest">
+          {displayText}
+          {showCursor && (
+            <span className="typing-cursor" style={{ opacity: 1 }}>
+              |
+            </span>
+          )}
         </h3>
 
         <h1 className="text-mainWhite text-center text-4xl lg:text-7xl">
           Transforming Concepts into Seamless{" "}
-          <span className="text-lightPurple">User Experiences</span>
+          <span className="gradient-text">User Experiences</span>
         </h1>
 
         <h3 className="text-secondaryGray text-center md:tracking-widest">
-          Hi, I am Stevan, Fullstack Developer from Sydney
+          Hi, I am <span className="gradient-text font-bold">Stevan</span>,
+          Fullstack Developer from Sydney
         </h3>
 
         <Link to="#projects">
