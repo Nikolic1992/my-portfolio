@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
+import Footer from "../components/Footer";
 
 function Section({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
@@ -76,6 +77,9 @@ function LandingPage() {
             <Contact />
           </Section>
         </section>
+        <Section>
+          <Footer />
+        </Section>
       </main>
     </div>
   );
