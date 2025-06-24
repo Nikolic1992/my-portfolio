@@ -2,13 +2,17 @@ function Experience() {
   return (
     <div className="mt-40 flex flex-col items-center justify-center px-4 md:px-0">
       <h1 className="text-mainWhite mb-10 text-center">
-        Previous <span className="text-lightPurple">work experience</span>
+        Previous <span className="gradient-text">work experience</span>
       </h1>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="flex w-full flex-col items-center justify-center gap-8 rounded-xl border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] p-8 md:max-w-[600px] md:flex-row">
-          <img src="./work-icon-laptop.png" alt="" />
+          <img
+            src="./assets/logos/trinity-logo.png"
+            alt="Trinity Consulting Business Logo"
+            className="h-20 w-20 rounded-lg"
+          />
           <div className="flex flex-col items-start justify-center gap-2">
-            <h3 className="text-lightPurple">Software Developer</h3>
+            <h3 className="gradient-text">Software Developer</h3>
             <span className="text-mainGray text-sm">
               ( Trinity Consulting Business - hybrid )
             </span>
@@ -26,9 +30,13 @@ function Experience() {
         </div>
 
         <div className="flex w-full flex-col items-center justify-center gap-8 rounded-xl border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] p-8 md:max-w-[600px] md:flex-row">
-          <img src="./graph-icon.png" alt="" />
+          <img
+            src="./assets/logos/astatinn-logo.png"
+            alt="Astatinn Logo"
+            className="h-20 w-20 rounded-lg"
+          />
           <div className="flex flex-col items-start justify-center gap-2">
-            <h3 className="text-lightPurple">Software Developer</h3>
+            <h3 className="gradient-text">Software Developer</h3>
             <span className="text-mainGray text-sm">( Astatinn - remote )</span>
 
             <p className="text-mainWhite">
@@ -44,9 +52,13 @@ function Experience() {
         </div>
 
         <div className="flex w-full flex-col items-center justify-center gap-8 rounded-xl border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] p-8 md:max-w-[600px] md:flex-row">
-          <img src="./lightbulb-icon.png" alt="" />
+          <img
+            src="./assets/logos/za-code-logo.png"
+            alt="ZaCode Logo"
+            className="object-fit h-20 w-20 rounded-lg"
+          />
           <div className="flex flex-col items-start justify-center gap-2">
-            <h3 className="text-lightPurple">Software Developer</h3>
+            <h3 className="gradient-text">Software Developer</h3>
             <span className="text-mainGray text-sm">( ZaCode - remote )</span>
 
             <p className="text-mainWhite">
@@ -63,9 +75,13 @@ function Experience() {
         </div>
 
         <div className="flex w-full flex-col items-center justify-center gap-8 rounded-xl border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] p-8 md:max-w-[600px] md:flex-row">
-          <img src="./work-icon-laptop-side.png" alt="" />
+          <img
+            src="./work-icon-laptop.png"
+            alt="Freelance Logo, hacker on laptop"
+            className="h-20 w-20"
+          />
           <div className="flex flex-col items-start justify-center gap-2">
-            <h3 className="text-lightPurple">Software Developer</h3>
+            <h3 className="gradient-text">Software Developer</h3>
             <span className="text-mainGray text-sm">
               ( Freelance - remote )
             </span>
