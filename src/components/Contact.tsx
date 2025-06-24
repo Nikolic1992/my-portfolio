@@ -42,10 +42,10 @@ function Contact() {
   };
 
   return (
-    <div className="my-40 flex flex-col items-center justify-center gap-4 px-4 md:px-0">
-      <h1 className="text-mainWhite w-[450px] max-w-[650px] text-center text-3xl font-bold md:text-5xl">
-        Ready to take <span className="text-lightPurple">your</span> digital
-        presence to the <span className="text-lightPurple">next level</span>?
+    <div className="mt-40 flex flex-col items-center justify-center gap-8 px-4 md:px-0">
+      <h1 className="text-mainWhite w-[390px] text-center tracking-tight md:w-[650px]">
+        Ready to take <span className="gradient-text">your</span> digital
+        presence to the <span className="gradient-text">next level</span>?
       </h1>
       <p className="text-mainGray text-center">
         Reach out to me today and let's discuss how I can help you achieve your
@@ -103,7 +103,7 @@ function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="relative mt-2 flex cursor-pointer items-center justify-center gap-4 overflow-hidden rounded-lg border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] px-8 py-4 shadow-lg transition-colors duration-300 hover:bg-white/15 md:w-[250px]"
+              className="relative mt-2 flex w-full cursor-pointer items-center justify-center gap-4 overflow-hidden rounded-lg border border-white/20 bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)] px-8 py-4 shadow-lg transition-colors duration-300 hover:bg-white/15 md:w-[250px]"
             >
               <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden rounded-lg">
                 <img
