@@ -22,7 +22,7 @@ function Projects({ scrollTo }: ProjectsProps) {
       className="relative mt-15 flex min-h-screen flex-col items-center justify-center px-4 md:px-0"
     >
       <h1 className="text-mainWhite text-center">
-        Selection of <span className="text-lightPurple">recent projects</span>
+        Selection of <span className="gradient-text">recent projects</span>
       </h1>
       <div className="mt-15 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2">
         {projectsData.map((project) => (
@@ -49,7 +49,7 @@ function Projects({ scrollTo }: ProjectsProps) {
                 />
               </div>
               <h4 className="text-mainGray hover:text-mainWhite relative z-20 transition-colors duration-300">
-                Case Study
+                View More
               </h4>
               <img src="./arrow.png" alt="arrow" className="relative z-20" />
             </Link>
