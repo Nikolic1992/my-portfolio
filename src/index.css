@@ -24,7 +24,7 @@
 
 @layer components {
   .nav-bar-btn {
-    @apply hover:text-mainWhite cursor-pointer uppercase transition-all duration-300;
+    @apply hover:text-lightPurple cursor-pointer uppercase transition-all duration-300;
   }
 }
 
@@ -36,6 +36,16 @@
   --color-mainWhite: #ffffff;
   --color-borderGray: #6971a2;
   --color-secondaryGray: #e4ecff;
+}
+
+@layer utilities {
+  .gradient-text {
+    background-image: linear-gradient(90deg, #e466d1, #6d66ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 /* Mouse loader */
