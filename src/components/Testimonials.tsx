@@ -89,8 +89,7 @@ function Testimonials() {
   return (
     <div className="mt-40 flex flex-col items-center justify-center">
       <h1 className="text-mainWhite mb-10 text-center">
-        Kind words from{" "}
-        <span className="text-lightPurple">satisfied clients</span>
+        Kind words from <span className="gradient-text">satisfied clients</span>
       </h1>
 
       <div className="w-full max-w-[900px] overflow-hidden" ref={emblaRef}>
@@ -111,7 +110,7 @@ function Testimonials() {
                     <p>{item.name}</p>
                     <p>
                       {item.role}
-                      <span className="text-lightPurple">{item.company}</span>
+                      <span className="gradient-text">{item.company}</span>
                     </p>
                   </div>
                 </div>
