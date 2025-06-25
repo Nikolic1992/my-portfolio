@@ -19,7 +19,7 @@ function Projects({ scrollTo }: ProjectsProps) {
     <div
       ref={sectionRef}
       id="projects"
-      className="relative mt-15 flex min-h-screen flex-col items-center justify-center px-4 md:px-0"
+      className="relative mt-15 flex min-h-screen flex-col items-center justify-center px-4 md:mt-0 md:px-0"
     >
       <h1 className="text-mainWhite text-center">
         Selection of <span className="gradient-text">recent projects</span>

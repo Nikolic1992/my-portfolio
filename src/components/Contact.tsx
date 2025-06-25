@@ -43,7 +43,7 @@ function Contact() {
 
   return (
     <div className="mt-40 flex flex-col items-center justify-center gap-8 px-4 md:px-0">
-      <h1 className="text-mainWhite w-[390px] text-center tracking-tight md:w-[650px]">
+      <h1 className="text-mainWhite w-[300px] text-center tracking-tight md:w-[650px]">
         Ready to take <span className="gradient-text">your</span> digital
         presence to the <span className="gradient-text">next level</span>?
       </h1>
