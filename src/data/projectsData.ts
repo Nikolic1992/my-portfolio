@@ -43,6 +43,17 @@ const projectsData = [
     live: "https://e-commerce-react-js-opal-ten.vercel.app/",
     github: "https://github.com/Nikolic1992/eCommerce-react-js",
   },
+  {
+    id: 5,
+    title: "Resume Template 📄✨",
+    image: "./portfolio-template.png",
+    mainDescription:
+      "Modern and customizable resume template built with React. Allows users to easily showcase their professional experience, skills, and projects with a clean and responsive design.",
+    description:
+      "React Resume Template is a sleek and modern portfolio/resume web application created using React and Tailwind CSS. It provides a highly customizable layout where users can display their profile information, skills, education, and projects in a structured format. The app emphasizes responsiveness, accessibility, and user-friendly design. It includes smooth scrolling navigation, reusable components, and a minimal aesthetic that highlights professionalism. This project is ideal for developers looking to quickly build and deploy a personal resume website that is both elegant and functional.",
+    live: "https://react-resume-template-beta.vercel.app/",
+    github: "https://github.com/Nikolic1992/react-resume-template",
+  },
 ];
 
 export default projectsData;
