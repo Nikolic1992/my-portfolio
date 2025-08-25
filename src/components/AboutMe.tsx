@@ -33,7 +33,7 @@ function AboutMe() {
           </div>
 
           <div className="flex flex-[0.7] flex-col gap-8">
-            <div className="relative flex min-h-[240px] items-center justify-center rounded-3xl bg-[url('/world-map.png')] bg-cover bg-center bg-no-repeat p-6">
+            <div className="relative flex min-h-[240px] items-center justify-center rounded-3xl bg-[url('/world-map.jpg')] bg-cover bg-center bg-no-repeat p-6">
               <div className="absolute inset-0 rounded-3xl bg-[url('/world-map-background.png')] bg-cover bg-center bg-no-repeat opacity-30" />
 
               <h4 className="text-mainWhite absolute bottom-5 left-5 z-10 text-center font-bold">
@@ -43,7 +43,7 @@ function AboutMe() {
 
             <div className="relative flex min-h-[240px] flex-col items-center justify-center rounded-3xl bg-[linear-gradient(90deg,rgba(22,26,49,0.6)_0%,rgba(6,9,31,0.6)_100%)]">
               <img
-                src="./matrix-background.png"
+                src="./matrix-background.jpg"
                 alt="fade image"
                 className="absolute z-10 h-full w-full rounded-3xl object-cover opacity-40"
               />
