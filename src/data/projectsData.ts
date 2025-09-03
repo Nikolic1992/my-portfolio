@@ -54,6 +54,17 @@ const projectsData = [
     live: "https://react-resume-template-beta.vercel.app/",
     github: "https://github.com/Nikolic1992/react-resume-template",
   },
+  {
+    id: 6,
+    title: "LinkUp 💬🌐",
+    image: "./link-up.png",
+    mainDescription:
+      "Advanced MERN stack video chat application with Stream.io integration, designed for language learners to connect and practice new languages through real-time video communication.",
+    description:
+      "LinkUp is a comprehensive video chat application built with the MERN stack featuring MongoDB with Mongoose ODM, Express.js with CORS and cookie-parser, React 19 with Vite, and Node.js backend. The frontend leverages modern technologies including Stream.io Video React SDK for real-time video communication, TanStack React Query for efficient data fetching, Zustand for lightweight state management, and React Router for navigation. The UI is crafted with Tailwind CSS and DaisyUI components, enhanced with Lucide React icons and React Hot Toast notifications. The backend implements secure authentication using bcryptjs for password hashing and JWT tokens, integrates Stream Chat SDK for messaging capabilities, and uses nodemon for development. This platform is specifically designed for language learners to practice through interactive video conversations, featuring user authentication, room management, high-quality video/audio streaming, and responsive design across all devices.",
+    live: "https://mern-video-chat-app.onrender.com/",
+    github: "https://github.com/Nikolic1992/mern-video-chat-app",
+  },
 ];
 
 export default projectsData;
