@@ -11,16 +11,15 @@ function Experience() {
             alt="Trinity Consulting Business Logo"
             className="h-20 w-20 rounded-lg"
           />
-          <div className="flex flex-col items-start justify-center gap-2">
-            <h3 className="gradient-text">Software Developer</h3>
-            <span className="text-mainGray text-sm">
+          <div className="flex flex-col items-start justify-center gap-2 text-base leading-relaxed">
+            <h3 className="gradient-text text-base">Frontend Developer</h3>
+            <span className="text-mainGray text-base">
               ( Trinity Consulting Business - hybrid )
             </span>
-
-            <p className="text-mainWhite">
-              Helping small businesses and early-stage startups build fast,
-              clean, and responsive websites using modern tools like{" "}
-              <span className="text-lightPurple">React</span>,{" "}
+            <p className="text-mainWhite text-base leading-relaxed">
+              Worked on websites for startups and small businesses, focusing on
+              clean, responsive design and smooth user experience using tools
+              like <span className="text-lightPurple">React</span>,{" "}
               <span className="text-lightPurple">Tailwind CSS</span>, and{" "}
               <span className="text-lightPurple">Firebase</span>. Focused on
               scalability, maintainability, and pixel-perfect UI, I transform
@@ -35,18 +34,21 @@ function Experience() {
             alt="Astatinn Logo"
             className="h-20 w-20 rounded-lg"
           />
-          <div className="flex flex-col items-start justify-center gap-2">
-            <h3 className="gradient-text">Software Developer</h3>
-            <span className="text-mainGray text-sm">( Astatinn - remote )</span>
-
-            <p className="text-mainWhite">
-              Built interactive web applications using{" "}
+          <div className="flex flex-col items-start justify-center gap-2 text-base leading-relaxed">
+            <h3 className="gradient-text text-base">Frontend Developer</h3>
+            <span className="text-mainGray text-base">
+              ( Astatinn - remote )
+            </span>
+            <p className="text-mainWhite text-base leading-relaxed">
+              Supported frontend development for a SaaS platform, improving
+              responsiveness and data handling using{" "}
               <span className="text-lightPurple">React</span>,{" "}
               <span className="text-lightPurple">Redux</span>, and{" "}
-              <span className="text-lightPurple">Material-UI</span>. Took full
-              ownership of tasks, implemented efficient state management with
-              Redux RTK Query, and crafted pixel-perfect, responsive interfaces
-              focused on performance and scalability.
+              <span className="text-lightPurple">Material-UI</span>. Implemented
+              efficient state management with Redux{" "}
+              <span className="text-lightPurple">Redux RTK Query</span>, and
+              crafted pixel-perfect, responsive interfaces focused on
+              performance and scalability.
             </p>
           </div>
         </div>
@@ -57,14 +59,13 @@ function Experience() {
             alt="ZaCode Logo"
             className="object-fit h-20 w-20 rounded-lg"
           />
-          <div className="flex flex-col items-start justify-center gap-2">
-            <h3 className="gradient-text">Software Developer</h3>
-            <span className="text-mainGray text-sm">( ZaCode - remote )</span>
-
-            <p className="text-mainWhite">
-              Collaborated with a team of five, developing reusable{" "}
-              <span className="text-lightPurple">React</span> components and
-              managing data flow using{" "}
+          <div className="flex flex-col items-start justify-center gap-2 text-base leading-relaxed">
+            <h3 className="gradient-text text-base">Web Developer</h3>
+            <span className="text-mainGray text-base">( ZaCode - remote )</span>
+            <p className="text-mainWhite text-base leading-relaxed">
+              Worked on project-based, practical frontend applications under
+              mentorship using <span className="text-lightPurple">React</span>{" "}
+              components and managing data flow with{" "}
               <span className="text-lightPurple">Redux</span>. Connected APIs
               and integrated real-time data with{" "}
               <span className="text-lightPurple">Firebase</span>, while
@@ -80,14 +81,14 @@ function Experience() {
             alt="Freelance Logo, hacker on laptop"
             className="h-20 w-20"
           />
-          <div className="flex flex-col items-start justify-center gap-2">
-            <h3 className="gradient-text">Software Developer</h3>
-            <span className="text-mainGray text-sm">
+          <div className="flex flex-col items-start justify-center gap-2 text-base leading-relaxed">
+            <h3 className="gradient-text text-base">Web Developer</h3>
+            <span className="text-mainGray text-base">
               ( Freelance - remote )
             </span>
-
-            <p className="text-mainWhite">
-              Developed personal projects to enhance frontend skills using{" "}
+            <p className="text-mainWhite text-base leading-relaxed">
+              Delivered freelance projects for clients, focusing on practical,
+              functional solutions using{" "}
               <span className="text-lightPurple">React</span>,{" "}
               <span className="text-lightPurple">TypeScript</span>, and{" "}
               <span className="text-lightPurple">Redux Toolkit</span>. Styled

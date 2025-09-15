@@ -98,7 +98,7 @@ function Hero() {
 
         <h3 className="text-secondaryGray text-center md:tracking-widest">
           Hi, I am <span className="gradient-text font-bold">Stevan</span>,
-          Fullstack Developer from Sydney
+          Frontend Developer from Sydney
         </h3>
 
         <Link to="#projects">

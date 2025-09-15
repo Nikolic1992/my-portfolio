@@ -102,7 +102,7 @@ function AboutMe() {
               My name is <span className="gradient-text font-bold">Stevan</span>
               , a dedicated{" "}
               <span className="gradient-text font-bold">
-                FullStack Developer
+                Frontend Developer
               </span>{" "}
               based in Sydney, Australia. My approach to programming is driven
               by curiosity, but sustained by a strong commitment to quality and

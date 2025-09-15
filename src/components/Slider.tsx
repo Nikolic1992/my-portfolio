@@ -7,13 +7,11 @@ import {
   SiReact,
   SiRedux,
   SiFirebase,
-  SiAppwrite,
   SiShadcnui,
   SiNodedotjs,
   SiExpress,
   SiFigma,
   SiGithub,
-  SiOpenai,
 } from "react-icons/si";
 
 const TECH_STACK = [
@@ -37,10 +35,6 @@ const TECH_STACK = [
     icon: <SiFirebase size={40} className="text-[#FFCA28]" />,
     name: "Firebase",
   },
-  {
-    icon: <SiAppwrite size={40} className="text-[#FF3E00]" />,
-    name: "Appwrite",
-  },
   { icon: <SiShadcnui size={40} className="text-[#22D3EE]" />, name: "Shadcn" },
   {
     icon: <SiNodedotjs size={40} className="text-[#339933]" />,
@@ -52,7 +46,6 @@ const TECH_STACK = [
   },
   { icon: <SiFigma size={40} className="text-[#F24E1E]" />, name: "Figma" },
   { icon: <SiGithub size={40} className="text-[#c7c5c5]" />, name: "GitHub" },
-  { icon: <SiOpenai size={40} className="text-[#10A37F]" />, name: "ChatGPT" },
 ];
 
 function Slider() {
